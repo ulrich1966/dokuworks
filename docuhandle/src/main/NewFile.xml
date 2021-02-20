@@ -1,15 +1,14 @@
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
 	xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report"
-	xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0"
-	xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+	xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.2"
+	office:mimetype="application/vnd.oasis.opendocument.text">
 	<office:meta>
 		<meta:creation-date>2017-05-30T09:56:31.087000000</meta:creation-date>
 		<meta:editing-duration>PT2H5M1S</meta:editing-duration>
 		<meta:editing-cycles>24</meta:editing-cycles>
-		<meta:generator>LibreOffice/5.2.7.2$Windows_x86 LibreOffice_project/2b7f1e640c46ceb28adf43ee075a6e8b8439ed10</meta:generator>
+		<meta:generator>jOpenDocument/1.3</meta:generator>
 		<dc:date>2021-02-19T20:16:51.840000000</dc:date>
-		<meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="19" meta:word-count="304" meta:character-count="2261" meta:non-whitespace-character-count="1974" />
 		<meta:user-defined meta:name="SingleXMLDocument_count" meta:value-type="float">0</meta:user-defined>
 	</office:meta>
 	<office:settings>
@@ -370,34 +369,28 @@
 			<number:text>.</number:text>
 			<number:year />
 		</number:date-style>
-		<style:style style:name="_0Tabelle1" style:family="table">
+		<style:style style:name="_0_0Tabelle1" style:family="table">
 			<style:table-properties style:width="17cm" table:align="margins" />
 		</style:style>
-		<style:style style:name="_0Tabelle1.A" style:family="table-column">
-			<style:table-column-properties style:column-width="4.8cm" style:rel-column-width="18501*" />
-		</style:style>
-		<style:style style:name="_0Tabelle1.B" style:family="table-column">
-			<style:table-column-properties style:column-width="12.201cm" style:rel-column-width="47034*" />
-		</style:style>
-		<style:style style:name="_0Tabelle1.A1" style:family="table-cell">
+		<style:style style:name="_0_0Tabelle1.A1" style:family="table-cell">
 			<style:table-cell-properties fo:padding="0.097cm" fo:border="none" />
 		</style:style>
-		<style:style style:name="_0Tabelle1.B1" style:family="table-cell">
-			<style:table-cell-properties fo:padding="0.097cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" />
+		<style:style style:name="_0_0Tabelle1.A" style:family="table-column">
+			<style:table-column-properties style:column-width="4.8cm" style:rel-column-width="18501*" />
 		</style:style>
-		<style:style style:name="_0MP1" style:family="paragraph" style:parent-style-name="Header">
-			<style:text-properties style:font-name="Times New Roman" fo:font-size="16pt" officeooo:rsid="001cf978" officeooo:paragraph-rsid="001cf978" style:font-size-asian="16pt" style:font-size-complex="16pt" />
-		</style:style>
-		<style:style style:name="_0MP2" style:family="paragraph" style:parent-style-name="Header">
-			<style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" officeooo:rsid="001cf978" officeooo:paragraph-rsid="001cf978" style:font-size-asian="8.75pt" style:font-name-complex="Times New Roman1" style:font-size-complex="10pt" />
-		</style:style>
-		<style:style style:name="_0MP3" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-			<style:text-properties style:font-name-complex="Times New Roman1" />
-		</style:style>
-		<style:style style:name="_0MT1" style:family="text">
+		<style:style style:name="_0_0MT1" style:family="text">
 			<style:text-properties officeooo:rsid="00379c3a" />
 		</style:style>
-		<style:page-layout style:name="_0Mpm1">
+		<style:style style:name="_0_0Tabelle1.B1" style:family="table-cell">
+			<style:table-cell-properties fo:padding="0.097cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" />
+		</style:style>
+		<style:style style:name="_0_0Tabelle1.B" style:family="table-column">
+			<style:table-column-properties style:column-width="12.201cm" style:rel-column-width="47034*" />
+		</style:style>
+		<style:style style:name="_0_0MP1" style:family="paragraph" style:parent-style-name="Header">
+			<style:text-properties style:font-name="Times New Roman" fo:font-size="16pt" officeooo:rsid="001cf978" officeooo:paragraph-rsid="001cf978" style:font-size-asian="16pt" style:font-size-complex="16pt" />
+		</style:style>
+		<style:page-layout style:name="_0_0Mpm1">
 			<style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="44" style:layout-grid-base-height="0.55cm" style:layout-grid-ruby-height="0cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false"
 				style:layout-grid-print="true" style:layout-grid-display="true" style:layout-grid-base-width="0.37cm" style:layout-grid-snap-to="true" style:footnote-max-height="0cm">
 				<style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000" />
@@ -407,28 +400,34 @@
 			</style:header-style>
 			<style:footer-style />
 		</style:page-layout>
+		<style:style style:name="_0_0MP2" style:family="paragraph" style:parent-style-name="Header">
+			<style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" officeooo:rsid="001cf978" officeooo:paragraph-rsid="001cf978" style:font-size-asian="8.75pt" style:font-name-complex="Times New Roman1" style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="_0_0MP3" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+			<style:text-properties style:font-name-complex="Times New Roman1" />
+		</style:style>
 	</office:automatic-styles>
 	<office:master-styles>
-		<style:master-page style:name="Standard" style:page-layout-name="_0Mpm1">
+		<style:master-page style:name="Standard" style:page-layout-name="_0_0Mpm1">
 			<style:header>
-				<table:table table:name="Tabelle1" table:style-name="_0Tabelle1">
-					<table:table-column table:style-name="_0Tabelle1.A" />
-					<table:table-column table:style-name="_0Tabelle1.B" />
+				<table:table table:name="Tabelle1" table:style-name="_0_0Tabelle1">
+					<table:table-column table:style-name="_0_0Tabelle1.A" />
+					<table:table-column table:style-name="_0_0Tabelle1.B" />
 					<table:table-row>
-						<table:table-cell table:style-name="_0Tabelle1.A1" office:value-type="string">
-							<text:p text:style-name="_0MP1">Ulrich Kloodt</text:p>
-							<text:p text:style-name="_0MP2">
-								<text:span text:style-name="_0MT1">Ostendorpstrasse 36</text:span>
+						<table:table-cell table:style-name="_0_0Tabelle1.A1" office:value-type="string">
+							<text:p text:style-name="_0_0MP1">Ulrich Kloodt</text:p>
+							<text:p text:style-name="_0_0MP2">
+								<text:span text:style-name="_0_0MT1">Ostendorpstrasse 36</text:span>
 								<text:line-break />
-								<text:span text:style-name="_0MT1">28203 Bremen</text:span>
+								<text:span text:style-name="_0_0MT1">28203 Bremen</text:span>
 								<text:line-break />
-								<text:span text:style-name="_0MT1">0174 2990061</text:span>
+								<text:span text:style-name="_0_0MT1">0174 2990061</text:span>
 								<text:line-break />
 								ulrich.kloodt@gmx.de
 							</text:p>
 						</table:table-cell>
-						<table:table-cell table:style-name="_0Tabelle1.B1" office:value-type="string">
-							<text:p text:style-name="_0MP3" />
+						<table:table-cell table:style-name="_0_0Tabelle1.B1" office:value-type="string">
+							<text:p text:style-name="_0_0MP3" />
 						</table:table-cell>
 					</table:table-row>
 				</table:table>
@@ -449,11 +448,11 @@
 				<text:sequence-decl text:display-outline-level="0" text:name="Text" />
 				<text:sequence-decl text:display-outline-level="0" text:name="Drawing" />
 			</text:sequence-decls>
-			<text:p text:style-name="P9">Bla_1</text:p>
-			<text:p text:style-name="P9">Bla_2</text:p>
-			<text:p text:style-name="P9">Bla_4</text:p>
+			<text:p text:style-name="P9">Firmenname</text:p>
+			<text:p text:style-name="P9">Vorname Nachname</text:p>
+			<text:p text:style-name="P9">Straße</text:p>
 			<text:p text:style-name="P10" />
-			<text:p text:style-name="P9">${cmp_zip} ${cmp_city}</text:p>
+			<text:p text:style-name="P9">Plz Stadt</text:p>
 			<text:p text:style-name="P9" />
 			<text:p text:style-name="P4">
 				<text:variable-set text:name="ORT" office:value-type="string">Bremen</text:variable-set>
@@ -461,10 +460,10 @@
 			</text:p>
 			<text:p text:style-name="Standard" />
 			<text:p text:style-name="Standard" />
-			<text:p text:style-name="P6">Bla_6</text:p>
+			<text:p text:style-name="P6">Jobtitel</text:p>
 			<text:p text:style-name="P5" />
 			<text:p text:style-name="P5" />
-			<text:p text:style-name="P5">Bla_8</text:p>
+			<text:p text:style-name="P5">Sehr Herr Titel Nachname,</text:p>
 			<text:p text:style-name="P5" />
 			<text:p text:style-name="P5">Sie suchen einen Softwareentwickler unter Java. Als 'Sun Certified Java Programmer' und 'Oracle Certified Professional, Java EE 5 Web Component Developer' mit mehrjähriger Projekterfahrung in der objektorientierten Entwicklung von webbasierten Anwendungen, würde ich mich Ihnen gerne vorstellen.</text:p>
 			<text:p text:style-name="P5" />
@@ -478,7 +477,7 @@
 			<text:p text:style-name="P5" />
 			<text:p text:style-name="P5">In meinem bisherigen Schaffen konnte ich sowohl eigenverantwortlich, als auch im Team</text:p>
 			<text:p text:style-name="P5">überzeugen. Aus meinen Projektarbeiten bringe ich die Erfahrung mit, dass sich meine Stärken im</text:p>
-			<text:p text:style-name="P5">Bla_1</text:p>
+			<text:p text:style-name="P5">konstruktiven und kreativen Austausch mit Kollegen am besten entwickeln. Aufgrund des Projektabschusses würde ich gerne eine neue und spannende Herausforderung bei der Firmenname zum annehmen. Meine Gehaltsvorstellung bewegt sich zum Einstieg um etwa ${job_salary} Euro, wobei ich Ihnen einen sofortigen Einstiegstermin anbieten kann.</text:p>
 			<text:p text:style-name="P5" />
 			<text:p text:style-name="P5">Ich freue mich sehr auf eine Einladung zu einem persönlichen Gespräch und verbleibe bis dahin mit</text:p>
 			<text:p text:style-name="P5">freundlichem Gruß</text:p>
