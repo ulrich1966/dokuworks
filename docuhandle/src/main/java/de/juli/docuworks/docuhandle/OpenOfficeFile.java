@@ -61,7 +61,7 @@ public class OpenOfficeFile {
 	 * Oeffnet das als File angegebene ODSingleXMLDocument und gibt es zuruek 
 	 */
 	private ODSingleXMLDocument openDoc(File file) throws JDOMException, IOException {
-		ODSingleXMLDocument doc = ODSingleXMLDocument.createFromPackage(file);
+		ODSingleXMLDocument doc = ODSingleXMLDocument.createFromFile(file);
 		return doc;
 	}
 	
@@ -91,7 +91,7 @@ public class OpenOfficeFile {
 	 */
 	public ODSingleXMLDocument saveDoc(File file, ODSingleXMLDocument doc) throws JDOMException, IOException {
 		file.createNewFile();
-		doc.saveToPackageAs(file);
+		doc.saveAs(file);
 		return openDoc(file);
 	}
 
