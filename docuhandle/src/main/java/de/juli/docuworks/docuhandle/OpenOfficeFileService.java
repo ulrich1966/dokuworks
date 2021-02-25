@@ -13,8 +13,9 @@ import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jopendocument.dom.ODSingleXMLDocument;
 
-public class OpenOfficeFile {
+public class OpenOfficeFileService {
 	private Map<String, String> dataMap;
+	private final String FIELD_PATTERN = "${%s}";
 
 	/**
 	 * Oeffnet das als source angegebenes ODSingleXMLDocument fuellt die in der data Map uebergebenen Daten ein und gibt
@@ -23,8 +24,7 @@ public class OpenOfficeFile {
 	public ODSingleXMLDocument convert(Path source, Map<String, String> data) throws JDOMException, IOException {
 		this.dataMap = (HashMap<String, String>) data;
 		ODSingleXMLDocument doc = openDoc(source);
-		iterateElements(doc);
-		return doc;
+		return iterateElements(doc);
 	}
 
 	/**
@@ -46,8 +46,7 @@ public class OpenOfficeFile {
 		String docFile = String.format("%s/%s", path, name);
 		File file = new File(docFile);
 		ODSingleXMLDocument doc = openDoc(file);
-		iterateElements(doc);
-		return doc;
+		return iterateElements(doc);
 	}
 
 	/**
@@ -102,7 +101,7 @@ public class OpenOfficeFile {
 	 * 
 	 * @param doc
 	 */
-	private void iterateElements(ODSingleXMLDocument doc) {
+	private ODSingleXMLDocument iterateElements(ODSingleXMLDocument doc) {
 		@SuppressWarnings("unchecked")
 		List<Element> list = doc.getBody().getChildren();
 
@@ -117,19 +116,29 @@ public class OpenOfficeFile {
 				}
 			}
 		}
+		return doc;
 	}
 
 	/**
 	 * Itteriert ueber die Map mit auszutauschenden Feldwerten und prueft ob
 	 * Felder im Element zu ersezetzen sind.
+	 * Ueberprueft die Schreibweise des Feldnamens ind der DataMap. Liegt die 
+	 * Schreibweise in geschweiftenklammern vor wir das Feld ersezte, wenn nicht
+	 * wir das Feldatribut zu ${xxx} ergaenzt.    
 	 * 
 	 * @param element
 	 */
 	private void changeValue(Element element) {
 		String tmp = element.getValue();
+		String field = "";
 		for (Entry<String, String> entry : dataMap.entrySet()) {
-			if (tmp.contains(entry.getKey())) {
-				tmp = tmp.replace(entry.getKey(), entry.getValue());
+			if(!entry.getKey().startsWith("${")) {
+				field = String.format(FIELD_PATTERN, entry.getKey());				
+			} else {
+				field = entry.getKey(); 
+			}
+			if (tmp.contains(field)) {
+				tmp = tmp.replace(field, entry.getValue());
 			}
 		}
 
