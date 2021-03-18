@@ -1,5 +1,5 @@
 
-package de.juli.docuworks.docuhandle;
+package de.juli.docuworks.docuhandle.service;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,8 +15,8 @@ import org.jopendocument.dom.ODSingleXMLDocument;
 
 public class OpenOfficeFileService {
 	private Map<String, String> dataMap;
-	private final String FIELD_PATTERN = "${%s}";
-
+	private static final String FIELD_PATTERN = "${%s}";
+	
 	/**
 	 * Oeffnet das als source angegebenes ODSingleXMLDocument fuellt die in der data Map uebergebenen Daten ein und gibt
 	 * das ODSingleXMLDocument zuruek
@@ -50,21 +50,6 @@ public class OpenOfficeFileService {
 	}
 
 	/**
-	 * Oeffnet das als Pfad angegebene ODSingleXMLDocument und gibt es zuruek 
-	 */
-	private ODSingleXMLDocument openDoc(Path path) throws JDOMException, IOException {
-		return openDoc(path.resolve(path).toFile());
-	}
-
-	/**
-	 * Oeffnet das als File angegebene ODSingleXMLDocument und gibt es zuruek 
-	 */
-	private ODSingleXMLDocument openDoc(File file) throws JDOMException, IOException {
-		ODSingleXMLDocument doc = ODSingleXMLDocument.createFromFile(file);
-		return doc;
-	}
-	
-	/**
 	 * Erzeut Fileobjet aus angebeenen Pfad und Namen.
 	 * Speichert eine Kopie des uebergebenen ODSingleXMLDocument in angegebene Datei
 	 * und gibt neue Datei als ODSingleXMLDocument zuruek
@@ -95,6 +80,21 @@ public class OpenOfficeFileService {
 	}
 
 	/**
+	 * Oeffnet das als Pfad angegebene ODSingleXMLDocument und gibt es zuruek 
+	 */
+	private ODSingleXMLDocument openDoc(Path path) throws JDOMException, IOException {
+		return openDoc(path.resolve(path).toFile());
+	}
+
+	/**
+	 * Oeffnet das als File angegebene ODSingleXMLDocument und gibt es zuruek 
+	 */
+	private ODSingleXMLDocument openDoc(File file) throws JDOMException, IOException {
+		ODSingleXMLDocument doc = ODSingleXMLDocument.createFromFile(file);
+		return doc;
+	}
+
+	/**
 	 * Itteriert ueber die Liste von Elementen aud dem ODSingleXMLDocument und
 	 * schickt jedes Element nach changeValue zu ueberpruefung und ggf.
 	 * Austausch des Feldwertes.
@@ -104,7 +104,7 @@ public class OpenOfficeFileService {
 	private ODSingleXMLDocument iterateElements(ODSingleXMLDocument doc) {
 		@SuppressWarnings("unchecked")
 		List<Element> list = doc.getBody().getChildren();
-
+		
 		if (list.size() <= 0)
 			list = null;
 
@@ -116,6 +116,9 @@ public class OpenOfficeFileService {
 				}
 			}
 		}
+
+		list.forEach(e -> System.out.println(e.getValue()));
+		
 		return doc;
 	}
 

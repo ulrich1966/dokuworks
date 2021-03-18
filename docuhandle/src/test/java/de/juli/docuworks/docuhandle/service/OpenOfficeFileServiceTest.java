@@ -1,24 +1,35 @@
-package de.juli.docuworks.docuhandle;
+package de.juli.docuworks.docuhandle.service;
 
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 
-import org.jopendocument.dom.ODSingleXMLDocument;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.juli.docuworks.docuhandle.model.DocumentModel;
+import de.juli.docuworks.docuhandle.service.DocumentModelService;
+import de.juli.docuworks.docuhandle.service.OpenOfficeFileService;
+
 public class OpenOfficeFileServiceTest {
 	private static final Logger LOG = LoggerFactory.getLogger(OpenOfficeFileServiceTest.class);
-	
+	/*
+	A_UML("\u00C4"),
+	O_UML("\u00D6"),
+	U_UML("\u00DC"),
+	a_UML("\u00E4"),
+	o_UML("\u00F6"),
+	u_UML("\u00FC"),
+	SZ("\u00DF");
+	 */
 	private String[][] fields = {
 			{"${cmp_name}", "Firmenname"}, 
 			{"${cnt_first_name}", "Vorname"}, 
 			{"${cnt_last_name}", "Nachname"},
-			{"${cmp_street}", "Straße"},
+			{"${cmp_street}", "Stra\u00DFe"},
 			{"${cmp_zip}", "Plz"},
 			{"${cmp_city}", "Stadt"},
 			{"${job_title}", "Jobtitel"},
@@ -36,9 +47,16 @@ public class OpenOfficeFileServiceTest {
 		
 		LOG.debug(source.toUri().getPath());
 		LOG.debug(target.toUri().getPath());
+		
+		DocumentModel model = new DocumentModel(source, target, map);
+		
+		//ODSingleXMLDocument doc = oof.convert(source, target, map);
+		DocumentModelService service = new DocumentModelService();
 
-		ODSingleXMLDocument doc = oof.convert(source, target, map);
-		Assert.assertNotNull(doc);		
+		model = service.convert(model);
+		Assert.assertNotNull(model);		
+		
+		model.getElementList().forEach(e -> System.out.println(e.getText()));
 		
 		LOG.debug("done");
 	}

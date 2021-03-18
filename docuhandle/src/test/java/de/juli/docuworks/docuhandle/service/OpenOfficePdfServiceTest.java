@@ -1,4 +1,4 @@
-package de.juli.docuworks.docuhandle;
+package de.juli.docuworks.docuhandle.service;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -21,7 +21,9 @@ import com.itextpdf.text.PageSize;
 import com.itextpdf.text.pdf.PdfDocument;
 import com.itextpdf.text.pdf.PdfWriter;
 
-import de.juli.docuworks.docuhandle.OpenOfficePdfService.CreationVia;
+import de.juli.docuworks.docuhandle.service.OpenOfficeFileService;
+import de.juli.docuworks.docuhandle.service.OpenOfficePdfService;
+import de.juli.docuworks.docuhandle.service.OpenOfficePdfService.CreationVia;
 
 
 public class OpenOfficePdfServiceTest {

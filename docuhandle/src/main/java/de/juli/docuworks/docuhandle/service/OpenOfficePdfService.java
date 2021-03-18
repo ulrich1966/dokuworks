@@ -1,4 +1,4 @@
-package de.juli.docuworks.docuhandle;
+package de.juli.docuworks.docuhandle.service;
 
 import java.io.File;
 import java.io.IOException;
