@@ -29,13 +29,8 @@ public class WebTemplatePdfService {
 		Context context = new Context();
 		context.setVariable("map", map);
 		
-		String html = null;
-		try {
-			html = templateEngine.process("templates/anschreiben", context);
-		} catch (Exception e) {
-			LOG.error(e.getMessage());
-		}
-
+		String html = templateEngine.process("templates/anschreiben", context);
+		
 		try {
 			OutputStream outputStream = new FileOutputStream(target.toFile());
 			ITextRenderer renderer = new ITextRenderer();
