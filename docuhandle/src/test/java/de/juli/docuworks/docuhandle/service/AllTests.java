@@ -5,7 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ OpenOfficeFileServiceTest.class, OpenOfficePdfServiceTest.class })
+@SuiteClasses({ })
 public class AllTests {
 
 }

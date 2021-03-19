@@ -87,7 +87,6 @@ public class DocumentModelService {
 	 * Speichert eine Kopie des uebergebenen ODSingleXMLDocument in angegebene Datei
 	 * und gibt neue Datei als ODSingleXMLDocument zuruek
 	 */
-	//private ODSingleXMLDocument saveDoc(File file, ODSingleXMLDocument doc) throws JDOMException, IOException {
 	private DocumentModel saveDoc(DocumentModel model) throws JDOMException, IOException {
 		File file = model.targetToFile();
 		file.createNewFile();

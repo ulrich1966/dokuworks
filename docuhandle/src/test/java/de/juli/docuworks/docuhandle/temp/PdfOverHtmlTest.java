@@ -1,4 +1,4 @@
-package de.juli.docuworks.docuhandle;
+package de.juli.docuworks.docuhandle.temp;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,7 +24,6 @@ import com.itextpdf.text.DocumentException;
 import de.juli.docuworks.docuhandle.model.DocumentModel;
 import de.juli.docuworks.docuhandle.service.DocumentModelService;
 import de.juli.docuworks.docuhandle.service.FilesAndPathes;
-import de.juli.docuworks.docuhandle.service.OpenOfficeFileService;
 
 public class PdfOverHtmlTest {
 	private static final Logger LOG = LoggerFactory.getLogger(PdfOverHtmlTest.class);
@@ -43,7 +42,6 @@ public class PdfOverHtmlTest {
 	
 	private List<Element> fillElements() throws Exception {
 		HashMap<String, String> map = fillMeUp();
-		OpenOfficeFileService oof = new OpenOfficeFileService();
 		Path source = Paths.get(new File("src/main/resources").getAbsolutePath());
 		Path target = source.resolve(Paths.get("newdoc.odt"));
 		source = source.resolve(Paths.get("test.odt"));

@@ -1,21 +1,21 @@
 package de.juli.docuworks.docuhandle.service;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 
+import org.jdom.JDOMException;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.juli.docuworks.docuhandle.model.DocumentModel;
-import de.juli.docuworks.docuhandle.service.DocumentModelService;
-import de.juli.docuworks.docuhandle.service.OpenOfficeFileService;
 
-public class OpenOfficeFileServiceTest {
-	private static final Logger LOG = LoggerFactory.getLogger(OpenOfficeFileServiceTest.class);
+public class DocumentModelServiceTest {
+	private static final Logger LOG = LoggerFactory.getLogger(DocumentModelServiceTest.class);
 	/*
 	A_UML("\u00C4"),
 	O_UML("\u00D6"),
@@ -37,10 +37,10 @@ public class OpenOfficeFileServiceTest {
 			{"${cnt_title}", "Titel"},
 		};
 	
+
 	@Test
-	public void test() throws Exception {
+	public void testConvert() throws JDOMException, IOException {
 		HashMap<String, String> map = fillMeUp();
-		OpenOfficeFileService oof = new OpenOfficeFileService();
 		Path source = Paths.get(new File("src/main/resources").getAbsolutePath());
 		Path target = source.resolve(Paths.get("newdoc.odt"));
 		source = source.resolve(Paths.get("test.odt"));
@@ -50,7 +50,6 @@ public class OpenOfficeFileServiceTest {
 		
 		DocumentModel model = new DocumentModel(source, target, map);
 		
-		//ODSingleXMLDocument doc = oof.convert(source, target, map);
 		DocumentModelService service = new DocumentModelService();
 
 		model = service.convert(model);
@@ -68,7 +67,4 @@ public class OpenOfficeFileServiceTest {
 		}
 		return map;
 	}
-	
-	
-
 }
