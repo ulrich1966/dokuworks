@@ -4,6 +4,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.juli.docuworks.docuhandle.service.FilesAndPathes;
+
 public class StartTest {
 	private static final Logger LOG = LoggerFactory.getLogger(StartTest.class);
 	static final Start start = new Start();

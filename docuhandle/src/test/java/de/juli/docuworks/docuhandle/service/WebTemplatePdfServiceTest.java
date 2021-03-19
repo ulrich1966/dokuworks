@@ -6,8 +6,6 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import de.juli.docuworks.docuhandle.FilesAndPathes;
-
 public class WebTemplatePdfServiceTest {
 
 	@Test

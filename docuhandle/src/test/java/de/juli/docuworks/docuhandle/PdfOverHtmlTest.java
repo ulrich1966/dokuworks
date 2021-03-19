@@ -23,6 +23,7 @@ import com.itextpdf.text.DocumentException;
 
 import de.juli.docuworks.docuhandle.model.DocumentModel;
 import de.juli.docuworks.docuhandle.service.DocumentModelService;
+import de.juli.docuworks.docuhandle.service.FilesAndPathes;
 import de.juli.docuworks.docuhandle.service.OpenOfficeFileService;
 
 public class PdfOverHtmlTest {
