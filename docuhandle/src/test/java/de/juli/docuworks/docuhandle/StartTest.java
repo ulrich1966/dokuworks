@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.juli.docuworks.docuhandle.service.FilesAndPathes;
+import de.juli.docuworks.docuhandle.service.FilesAndPathesService;
 
 public class StartTest {
 	private static final Logger LOG = LoggerFactory.getLogger(StartTest.class);
@@ -18,7 +18,7 @@ public class StartTest {
 
 	@Test
 	public void testPath() {
-		FilesAndPathes fap = new FilesAndPathes();
+		FilesAndPathesService fap = new FilesAndPathesService();
 		String txt = fap.getResourcePath();
 		LOG.debug(txt);
 	}

@@ -23,7 +23,7 @@ import com.itextpdf.text.DocumentException;
 
 import de.juli.docuworks.docuhandle.model.DocumentModel;
 import de.juli.docuworks.docuhandle.service.DocumentModelService;
-import de.juli.docuworks.docuhandle.service.FilesAndPathes;
+import de.juli.docuworks.docuhandle.service.FilesAndPathesService;
 
 public class PdfOverHtmlTest {
 	private static final Logger LOG = LoggerFactory.getLogger(PdfOverHtmlTest.class);
@@ -94,7 +94,7 @@ public class PdfOverHtmlTest {
 		String html = templateEngine.process("templates/template", context);
 
 		try {
-			String path$ = FilesAndPathes.getResourcePath("message.pdf");
+			String path$ = FilesAndPathesService.getResourcePath("message.pdf");
 			OutputStream outputStream = new FileOutputStream(path$);
 			ITextRenderer renderer = new ITextRenderer();
 			renderer.setDocumentFromString(html);
