@@ -2,8 +2,8 @@ package de.juli.docuworks.docuhandle.model;
 
 import java.io.File;
 import java.nio.file.Path;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.jdom.Element;
 import org.jopendocument.dom.ODSingleXMLDocument;
@@ -13,13 +13,13 @@ public class DocumentModel {
 	private ODSingleXMLDocument sourceDocument;
 	private Path source; 
 	private Path target; 
-	private HashMap<String, String> map;
+	private Map<String, String> map;
 	
 	public DocumentModel() {
 		super();
 	}
 	
-	public DocumentModel(Path source, Path target, HashMap<String, String> map) {
+	public DocumentModel(Path source, Path target, Map<String, String> map) {
 		this();
 		this.source = source;
 		this.target = target;
@@ -64,11 +64,11 @@ public class DocumentModel {
 		this.target = target;
 	}
 
-	public HashMap<String, String> getMap() {
+	public Map<String, String> getMap() {
 		return map;
 	}
 
-	public void setMap(HashMap<String, String> map) {
+	public void setMap(Map<String, String> map) {
 		this.map = map;
 	}
 }
